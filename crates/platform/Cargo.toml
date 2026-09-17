@@ -1,0 +1,27 @@
+[package]
+name = "companion-platform"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+companion-core = { path = "../core" }
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sysinfo = { version = "0.37", default-features = false, features = ["system"] }
+battery = "0.7"
+chrono = "0.4"
+directories = "6"
+netdev = "0.46"
+ureq = { version = "3", default-features = false, features = ["json"] }
+
+[target.'cfg(not(target_os = "windows"))'.dependencies]
+ureq = { version = "3", default-features = false, features = ["rustls"] }
+
+[target.'cfg(target_os = "windows")'.dependencies]
+ureq = { version = "3", default-features = false, features = ["native-tls"] }
+windows = { version = "0.62", features = ["Win32_Media_Audio", "Win32_Media_Audio_Endpoints", "Win32_System_Com", "Win32_System_Com_StructuredStorage", "Win32_System_Variant", "Win32_UI_Shell_PropertiesSystem", "Win32_Devices_Bluetooth", "Win32_Storage_FileSystem", "Win32_Foundation"] }
+
+[build-dependencies]
+cc = "1"

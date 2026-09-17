@@ -1,0 +1,603 @@
+{
+  "id": "pip",
+  "name": "Pip",
+  "author": "Scopobot",
+  "description": "A sunny little pal with a very big heart.",
+  "spriteSize": [
+    64,
+    64
+  ],
+  "scale": 3,
+  "kind": "human",
+  "captions": {
+    "idle": "Happy to keep you company.",
+    "battery_low": "A little recharge would be lovely.",
+    "tired": "Taking a tiny breather.",
+    "battery_high": "Ready for a little adventure!",
+    "charging": "Getting my energy back!",
+    "charging_start": "Ooh, a little power snack.",
+    "wifi_lost": "Where did the signal wander off to?",
+    "wifi_search": "Looking for our connection.",
+    "wifi_restored": "There it is! Welcome back.",
+    "cpu_high": "Big task? We can do this!",
+    "cpu_critical": "Cheering you on through the busy bits.",
+    "sleep": "Just a tiny cozy nap.",
+    "celebrate": "A little happy dance, just because.",
+    "wake": "Hello, new day!",
+    "headphones_idle": "A little music makes everything better.",
+    "headphones_reaction": "Oh! Hello there.",
+    "play": "Fetch? Fetch!",
+    "desk": "Your very small coworker.",
+    "nap": "Do not disturb the little snooze.",
+    "wave": "You are doing great, by the way."
+  },
+  "animations": {
+    "idle": {
+      "file": "atlas.png",
+      "frames": 4,
+      "durationsMs": [
+        2200,
+        1800,
+        500,
+        1800
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "blink": {
+      "file": "atlas.png",
+      "frames": 2,
+      "durationsMs": [
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "battery_low": {
+      "file": "atlas.png",
+      "frames": 1,
+      "durationsMs": [
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          627,
+          627,
+          627
+        ]
+      ]
+    },
+    "tired": {
+      "file": "atlas.png",
+      "frames": 2,
+      "durationsMs": [
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "sleep": {
+      "file": "atlas.png",
+      "frames": 1,
+      "durationsMs": [
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          627,
+          627,
+          627
+        ]
+      ]
+    },
+    "nap": {
+      "file": "atlas.png",
+      "frames": 1,
+      "durationsMs": [
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          627,
+          627,
+          627
+        ]
+      ]
+    },
+    "battery_high": {
+      "file": "atlas.png",
+      "frames": 4,
+      "durationsMs": [
+        1200,
+        1200,
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "charging": {
+      "file": "atlas.png",
+      "frames": 4,
+      "durationsMs": [
+        1200,
+        1200,
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          627,
+          627,
+          627
+        ]
+      ]
+    },
+    "charging_start": {
+      "file": "atlas.png",
+      "frames": 3,
+      "durationsMs": [
+        1200,
+        1200,
+        1200
+      ],
+      "loop": false,
+      "regions": [
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          627,
+          0,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "wifi_lost": {
+      "file": "atlas.png",
+      "frames": 3,
+      "durationsMs": [
+        1200,
+        1200,
+        1200
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "wifi_search": {
+      "file": "atlas.png",
+      "frames": 2,
+      "durationsMs": [
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "wifi_restored": {
+      "file": "atlas.png",
+      "frames": 3,
+      "durationsMs": [
+        350,
+        350,
+        350
+      ],
+      "loop": false,
+      "regions": [
+        [
+          627,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "cpu_high": {
+      "file": "atlas.png",
+      "frames": 2,
+      "durationsMs": [
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "cpu_critical": {
+      "file": "atlas.png",
+      "frames": 2,
+      "durationsMs": [
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          627,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "celebrate": {
+      "file": "atlas.png",
+      "frames": 4,
+      "durationsMs": [
+        350,
+        350,
+        350,
+        350
+      ],
+      "loop": true,
+      "regions": [
+        [
+          627,
+          0,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          0,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "wake": {
+      "file": "atlas.png",
+      "frames": 3,
+      "durationsMs": [
+        1200,
+        1200,
+        1200
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          627,
+          627,
+          627
+        ],
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "headphones_idle": {
+      "file": "atlas.png",
+      "frames": 2,
+      "durationsMs": [
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          627,
+          627,
+          627
+        ]
+      ]
+    },
+    "headphones_reaction": {
+      "file": "atlas.png",
+      "frames": 3,
+      "durationsMs": [
+        1200,
+        1200,
+        1200
+      ],
+      "loop": false,
+      "regions": [
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          627,
+          0,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ]
+      ]
+    },
+    "play": {
+      "file": "atlas.png",
+      "frames": 4,
+      "durationsMs": [
+        350,
+        350,
+        350,
+        350
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          0,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          627,
+          627,
+          627
+        ]
+      ]
+    },
+    "desk": {
+      "file": "atlas.png",
+      "frames": 1,
+      "durationsMs": [
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          627,
+          627,
+          627,
+          627
+        ]
+      ]
+    },
+    "wave": {
+      "file": "atlas.png",
+      "frames": 3,
+      "durationsMs": [
+        1200,
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          627,
+          627,
+          627,
+          627
+        ],
+        [
+          0,
+          0,
+          627,
+          627
+        ],
+        [
+          627,
+          627,
+          627,
+          627
+        ]
+      ]
+    }
+  }
+}

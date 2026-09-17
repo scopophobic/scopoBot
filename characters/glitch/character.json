@@ -1,0 +1,1003 @@
+{
+  "id": "glitch",
+  "name": "Glitch",
+  "author": "Scopobot",
+  "description": "An expressive tiny hoodie buddy with animated limbs, blinking eyes, and a mischievous antenna.",
+  "spriteSize": [
+    64,
+    64
+  ],
+  "scale": 2,
+  "kind": "robot",
+  "captions": {
+    "idle": "Happy to keep you company.",
+    "battery_low": "A little recharge would be lovely.",
+    "tired": "Taking a tiny breather.",
+    "battery_high": "Ready for a little adventure!",
+    "charging": "Getting my energy back!",
+    "charging_start": "Ooh, a little power snack.",
+    "wifi_lost": "Where did the signal wander off to?",
+    "wifi_search": "Looking for our connection.",
+    "wifi_restored": "There it is! Welcome back.",
+    "cpu_high": "Big task? We can do this!",
+    "cpu_critical": "Cheering you on through the busy bits.",
+    "sleep": "Just a tiny cozy nap.",
+    "celebrate": "A little happy dance, just because.",
+    "wake": "Hello, new day!",
+    "headphones_idle": "A little music makes everything better.",
+    "headphones_reaction": "Oh! Hello there.",
+    "play": "A little happy hop!",
+    "desk": "Your very small coworker.",
+    "nap": "Do not disturb the little snooze.",
+    "wave": "You are doing great, by the way.",
+    "walk": "Stretching my tiny legs.",
+    "curious": "What are we making today?",
+    "dance": "Tiny dance party!",
+    "memory_high": "RAM is busy. Close unused apps or tabs.",
+    "memory_critical": "RAM is busy. Close unused apps or tabs."
+  },
+  "animations": {
+    "idle": {
+      "file": "sprites/motion.png",
+      "frames": 4,
+      "durationsMs": [
+        1100,
+        900,
+        900,
+        1100
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          313,
+          313
+        ],
+        [
+          313,
+          0,
+          314,
+          313
+        ],
+        [
+          627,
+          0,
+          313,
+          313
+        ],
+        [
+          940,
+          0,
+          314,
+          313
+        ]
+      ]
+    },
+    "blink": {
+      "file": "sprites/motion.png",
+      "frames": 4,
+      "durationsMs": [
+        70,
+        70,
+        110,
+        100
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          313,
+          313,
+          314
+        ],
+        [
+          313,
+          313,
+          314,
+          314
+        ],
+        [
+          627,
+          313,
+          313,
+          314
+        ],
+        [
+          940,
+          313,
+          314,
+          314
+        ]
+      ]
+    },
+    "walk": {
+      "file": "sprites/motion.png",
+      "frames": 4,
+      "durationsMs": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          627,
+          313,
+          313
+        ],
+        [
+          313,
+          627,
+          314,
+          313
+        ],
+        [
+          627,
+          627,
+          313,
+          313
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ]
+      ]
+    },
+    "wave": {
+      "file": "sprites/motion.png",
+      "frames": 4,
+      "durationsMs": [
+        230,
+        230,
+        230,
+        450
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          940,
+          313,
+          314
+        ],
+        [
+          313,
+          940,
+          314,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ]
+    },
+    "sleep": {
+      "file": "sprites/reactions.png",
+      "frames": 4,
+      "durationsMs": [
+        1200,
+        1200,
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          313,
+          313
+        ],
+        [
+          313,
+          0,
+          314,
+          313
+        ],
+        [
+          627,
+          0,
+          313,
+          313
+        ],
+        [
+          940,
+          0,
+          314,
+          313
+        ]
+      ]
+    },
+    "charging": {
+      "file": "sprites/reactions.png",
+      "frames": 4,
+      "durationsMs": [
+        450,
+        450,
+        450,
+        450
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          313,
+          313,
+          314
+        ],
+        [
+          313,
+          313,
+          314,
+          314
+        ],
+        [
+          627,
+          313,
+          313,
+          314
+        ],
+        [
+          940,
+          313,
+          314,
+          314
+        ]
+      ]
+    },
+    "wifi_search": {
+      "file": "sprites/reactions.png",
+      "frames": 4,
+      "durationsMs": [
+        450,
+        450,
+        450,
+        450
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          627,
+          313,
+          313
+        ],
+        [
+          313,
+          627,
+          314,
+          313
+        ],
+        [
+          627,
+          627,
+          313,
+          313
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ]
+      ]
+    },
+    "celebrate": {
+      "file": "sprites/reactions.png",
+      "frames": 4,
+      "durationsMs": [
+        260,
+        180,
+        260,
+        400
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          940,
+          313,
+          314
+        ],
+        [
+          313,
+          940,
+          314,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ]
+    },
+    "nap": {
+      "file": "sprites/reactions.png",
+      "frames": 4,
+      "durationsMs": [
+        1200,
+        1200,
+        1200,
+        1200
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          313,
+          313
+        ],
+        [
+          313,
+          0,
+          314,
+          313
+        ],
+        [
+          627,
+          0,
+          313,
+          313
+        ],
+        [
+          940,
+          0,
+          314,
+          313
+        ]
+      ]
+    },
+    "battery_low": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        900,
+        900,
+        900,
+        900
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          313,
+          313
+        ],
+        [
+          313,
+          0,
+          314,
+          313
+        ],
+        [
+          627,
+          0,
+          313,
+          313
+        ],
+        [
+          940,
+          0,
+          314,
+          313
+        ]
+      ]
+    },
+    "tired": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        900,
+        900,
+        900,
+        900
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          313,
+          313
+        ],
+        [
+          313,
+          0,
+          314,
+          313
+        ],
+        [
+          627,
+          0,
+          313,
+          313
+        ],
+        [
+          940,
+          0,
+          314,
+          313
+        ]
+      ]
+    },
+    "battery_high": {
+      "file": "sprites/motion.png",
+      "frames": 4,
+      "durationsMs": [
+        1100,
+        900,
+        900,
+        1100
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          0,
+          313,
+          313
+        ],
+        [
+          313,
+          0,
+          314,
+          313
+        ],
+        [
+          627,
+          0,
+          313,
+          313
+        ],
+        [
+          940,
+          0,
+          314,
+          313
+        ]
+      ]
+    },
+    "charging_start": {
+      "file": "sprites/reactions.png",
+      "frames": 4,
+      "durationsMs": [
+        450,
+        450,
+        450,
+        450
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          313,
+          313,
+          314
+        ],
+        [
+          313,
+          313,
+          314,
+          314
+        ],
+        [
+          627,
+          313,
+          313,
+          314
+        ],
+        [
+          940,
+          313,
+          314,
+          314
+        ]
+      ]
+    },
+    "wifi_lost": {
+      "file": "sprites/reactions.png",
+      "frames": 4,
+      "durationsMs": [
+        450,
+        450,
+        450,
+        450
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          627,
+          313,
+          313
+        ],
+        [
+          313,
+          627,
+          314,
+          313
+        ],
+        [
+          627,
+          627,
+          313,
+          313
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ]
+      ]
+    },
+    "wifi_restored": {
+      "file": "sprites/reactions.png",
+      "frames": 4,
+      "durationsMs": [
+        260,
+        180,
+        260,
+        400
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          940,
+          313,
+          314
+        ],
+        [
+          313,
+          940,
+          314,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ]
+    },
+    "cpu_high": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          313,
+          313,
+          314
+        ],
+        [
+          313,
+          313,
+          314,
+          314
+        ],
+        [
+          627,
+          313,
+          313,
+          314
+        ],
+        [
+          940,
+          313,
+          314,
+          314
+        ]
+      ]
+    },
+    "cpu_critical": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          313,
+          313,
+          314
+        ],
+        [
+          313,
+          313,
+          314,
+          314
+        ],
+        [
+          627,
+          313,
+          313,
+          314
+        ],
+        [
+          940,
+          313,
+          314,
+          314
+        ]
+      ]
+    },
+    "wake": {
+      "file": "sprites/motion.png",
+      "frames": 4,
+      "durationsMs": [
+        230,
+        230,
+        230,
+        450
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          940,
+          313,
+          314
+        ],
+        [
+          313,
+          940,
+          314,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ]
+    },
+    "headphones_idle": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        400,
+        400,
+        400,
+        400
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          627,
+          313,
+          313
+        ],
+        [
+          313,
+          627,
+          314,
+          313
+        ],
+        [
+          627,
+          627,
+          313,
+          313
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ]
+      ]
+    },
+    "headphones_reaction": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        450,
+        450,
+        450,
+        450
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          940,
+          313,
+          314
+        ],
+        [
+          313,
+          940,
+          314,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ]
+    },
+    "play": {
+      "file": "sprites/reactions.png",
+      "frames": 4,
+      "durationsMs": [
+        260,
+        180,
+        260,
+        400
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          940,
+          313,
+          314
+        ],
+        [
+          313,
+          940,
+          314,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ]
+    },
+    "desk": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          313,
+          313,
+          314
+        ],
+        [
+          313,
+          313,
+          314,
+          314
+        ],
+        [
+          627,
+          313,
+          313,
+          314
+        ],
+        [
+          940,
+          313,
+          314,
+          314
+        ]
+      ]
+    },
+    "curious": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        450,
+        450,
+        450,
+        450
+      ],
+      "loop": false,
+      "regions": [
+        [
+          0,
+          940,
+          313,
+          314
+        ],
+        [
+          313,
+          940,
+          314,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ]
+    },
+    "dance": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        220,
+        180,
+        220,
+        260
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          627,
+          313,
+          313
+        ],
+        [
+          313,
+          627,
+          314,
+          313
+        ],
+        [
+          627,
+          627,
+          313,
+          313
+        ],
+        [
+          940,
+          627,
+          314,
+          313
+        ]
+      ]
+    },
+    "memory_high": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        450,
+        450,
+        450,
+        450
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          940,
+          313,
+          314
+        ],
+        [
+          313,
+          940,
+          314,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ]
+    },
+    "memory_critical": {
+      "file": "sprites/states.png",
+      "frames": 4,
+      "durationsMs": [
+        240,
+        240,
+        240,
+        240
+      ],
+      "loop": true,
+      "regions": [
+        [
+          0,
+          940,
+          313,
+          314
+        ],
+        [
+          313,
+          940,
+          314,
+          314
+        ],
+        [
+          627,
+          940,
+          313,
+          314
+        ],
+        [
+          940,
+          940,
+          314,
+          314
+        ]
+      ]
+    }
+  }
+}

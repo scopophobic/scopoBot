@@ -1,0 +1,200 @@
+{
+  "id": "hoodie_bot",
+  "name": "Hoodie Bot",
+  "author": "Scopobot",
+  "description": "A tiny digital squatter. This corner is mine now.",
+  "spriteSize": [
+    32,
+    32
+  ],
+  "scale": 4,
+  "animations": {
+    "idle": {
+      "file": "sprites/idle.png",
+      "frames": 4,
+      "durationsMs": [
+        1000,
+        180,
+        1600,
+        140
+      ],
+      "loop": true
+    },
+    "blink": {
+      "file": "sprites/blink.png",
+      "frames": 4,
+      "durationsMs": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false
+    },
+    "sleep": {
+      "file": "sprites/sleep.png",
+      "frames": 4,
+      "durationsMs": [
+        1200,
+        400,
+        1000,
+        400
+      ],
+      "loop": true
+    },
+    "tired": {
+      "file": "sprites/tired.png",
+      "frames": 4,
+      "durationsMs": [
+        250,
+        250,
+        250,
+        250
+      ],
+      "loop": true
+    },
+    "battery_low": {
+      "file": "sprites/battery_low.png",
+      "frames": 4,
+      "durationsMs": [
+        250,
+        250,
+        250,
+        250
+      ],
+      "loop": true
+    },
+    "battery_high": {
+      "file": "sprites/battery_high.png",
+      "frames": 4,
+      "durationsMs": [
+        250,
+        250,
+        250,
+        250
+      ],
+      "loop": true
+    },
+    "charging_start": {
+      "file": "sprites/charging_start.png",
+      "frames": 4,
+      "durationsMs": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false
+    },
+    "charging": {
+      "file": "sprites/charging.png",
+      "frames": 4,
+      "durationsMs": [
+        250,
+        250,
+        250,
+        250
+      ],
+      "loop": true
+    },
+    "wifi_lost": {
+      "file": "sprites/wifi_lost.png",
+      "frames": 4,
+      "durationsMs": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false
+    },
+    "wifi_search": {
+      "file": "sprites/wifi_search.png",
+      "frames": 4,
+      "durationsMs": [
+        250,
+        250,
+        250,
+        250
+      ],
+      "loop": true
+    },
+    "wifi_restored": {
+      "file": "sprites/wifi_restored.png",
+      "frames": 4,
+      "durationsMs": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false
+    },
+    "cpu_high": {
+      "file": "sprites/cpu_high.png",
+      "frames": 4,
+      "durationsMs": [
+        250,
+        250,
+        250,
+        250
+      ],
+      "loop": true
+    },
+    "cpu_critical": {
+      "file": "sprites/cpu_critical.png",
+      "frames": 4,
+      "durationsMs": [
+        250,
+        250,
+        250,
+        250
+      ],
+      "loop": true
+    },
+    "celebrate": {
+      "file": "sprites/celebrate.png",
+      "frames": 4,
+      "durationsMs": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false
+    },
+    "wake": {
+      "file": "sprites/wake.png",
+      "frames": 4,
+      "durationsMs": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false
+    },
+    "headphones_reaction": {
+      "file": "sprites/headphones_reaction.png",
+      "frames": 4,
+      "durationsMs": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": false
+    },
+    "headphones_idle": {
+      "file": "sprites/headphones_idle.png",
+      "frames": 4,
+      "durationsMs": [
+        250,
+        250,
+        250,
+        250
+      ],
+      "loop": true
+    }
+  }
+}

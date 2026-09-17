@@ -13,7 +13,7 @@ This is a local desktop application, not a website, AI assistant, or cloud servi
 
 ## Download and install
 
-[Preview releases](https://github.com/scopophobic/scopoBot/releases) contain downloadable packages when a release has been built. Until then, build from source below. This is an early preview.
+[Download the latest preview](https://github.com/scopophobic/scopoBot/releases/tag/v0.1.0-preview.1): [Mac Apple Silicon](https://github.com/scopophobic/scopoBot/releases/download/v0.1.0-preview.1/Scopobot-macos-arm64.zip) · [Windows x64](https://github.com/scopophobic/scopoBot/releases/download/v0.1.0-preview.1/Scopobot-windows.zip). Both packages include the terminal companion. Intel Mac users can build from source. This is an early preview.
 
 - **Mac:** extract the Mac ZIP and move Scopobot.app to Applications. The filename indicates its CPU architecture. The preview is ad-hoc signed, without Apple notarization; macOS may require approval in System Settings → Privacy & Security.
 - **Windows:** extract the entire Windows ZIP, keeping both executables and the characters folder together. Open scopobot.exe for desktop mode or scopobot-terminal.exe for terminal mode. The preview is unsigned.

@@ -1,8 +1,15 @@
+
+
+
+
 # Scopobot
+
 
 A friendly pixel mascot in a compact transparent desktop window. Glitch is the default companion; Mochi the puppy and Pip are selectable alternatives. Mac and Windows share a Rust runtime; the terminal companion uses the same character pack and Director. Linux terminal mode is included; Linux desktop remains experimental.
 
 This is a local desktop application, not a website, AI assistant, or cloud service.
+
+<img width="800" height="559" alt="ScreenRecording2026-09-17at6 00 29AM-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/61e5630c-f024-476d-ae43-74c3ee73a50a" />
 
 ## Download and install
 
